@@ -23,7 +23,7 @@ export function ScrollReveal({
   delay = 0,
   direction = "up",
 }: ScrollRevealProps) {
-  return (
+  const content = (
     <motion.div
       initial={{
         opacity: 0,
@@ -45,4 +45,10 @@ export function ScrollReveal({
       {children}
     </motion.div>
   );
+
+  if (direction === "left" || direction === "right") {
+    return <div className="overflow-hidden">{content}</div>;
+  }
+
+  return content;
 }

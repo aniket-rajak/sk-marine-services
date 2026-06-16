@@ -173,5 +173,7 @@ User Action → Client Component → API Route → Nodemailer → SMTP
 | Always 200 on contact form | Prevents user confusion from transient email failures |
 | Separate Art & Statues data/component tree | Clean isolation from marine content; can be extracted later |
 | 1128px hamburger breakpoint | Custom breakpoint to avoid premature menu collapse on tablets |
+| ScrollReveal overflow-hidden wrapper for horizontal directions | Prevents GPU composited layer phantom overflow on mobile WebKit browsers |
+| Footer FOURI Team credit | "Proudly Design and Develop by FOURI Team with Care" hyperlinked to fouri.in |
 | In-memory rate limiting | Sufficient for expected traffic; no Redis dependency |
 | Unsplash + other CDNs | Reliable free image hosting with `next/image` optimization |

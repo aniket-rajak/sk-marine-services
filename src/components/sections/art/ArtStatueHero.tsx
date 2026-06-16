@@ -89,7 +89,7 @@ export function ArtStatueHero() {
 
           <motion.div
             variants={itemVariants}
-            className="mt-12 flex items-center gap-6 text-navy-300"
+            className="mt-12 flex flex-wrap items-center gap-3 sm:gap-6 text-navy-300"
           >
             {["Custom Designs", "Pan-India Delivery", "Installation Service"].map((badge) => (
               <div key={badge} className="flex items-center gap-2">

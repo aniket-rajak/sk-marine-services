@@ -15,7 +15,7 @@ export function BrandsCarousel() {
           </p>
         </ScrollReveal>
         <div className="relative overflow-hidden">
-          <div className="flex gap-16 items-center overflow-x-auto scrollbar-hide">
+          <div className="flex gap-16 items-center overflow-hidden">
             <motion.div
               className="flex gap-16 items-center"
               animate={{ x: ["0%", "-50%"] }}

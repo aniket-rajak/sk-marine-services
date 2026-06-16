@@ -33,7 +33,7 @@ Premium marine motor sales and servicing website for **Shree Krishna Marine Moto
 ### Interaction & UX
 - **Page transition loader** — Marine-themed spinning ship overlay on every route change (500ms, Framer Motion)
 - **`cursor-pointer` globally** — All `a`, `button`, `[role="button"]`, `select`, `summary` elements plus interactive cards
-- **Smooth scroll animations** — `ScrollReveal` component with IntersectionObserver-based reveal on scroll
+- **Smooth scroll animations** — `ScrollReveal` component with IntersectionObserver-based reveal on scroll; horizontal directions wrapped in `overflow-hidden` to prevent GPU composited layer overflow
 - **Animated counters** — `useCounter` hook for stats (e.g., "15+ Years Experience")
 - **Testimonial carousel** — Slide transitions with dot indicators and prev/next controls
 - **Mobile responsive** — Hamburger menu at 1128px breakpoint, stacked layouts, touch-friendly targets
@@ -192,4 +192,3 @@ Kolkata, West Bengal, India
 ---
 
 **Proudly Design and Develop by [FOURI Team](https://fouri.in/) with Care**
-# sk-marine-services

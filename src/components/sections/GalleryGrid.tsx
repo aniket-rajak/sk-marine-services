@@ -61,12 +61,11 @@ export function GalleryGrid() {
           ))}
         </div>
 
-        <motion.div layout className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-          <AnimatePresence mode="popLayout">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+          <AnimatePresence mode="wait">
             {filtered.map((img, i) => (
               <motion.div
                 key={img.id}
-                layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
@@ -93,7 +92,7 @@ export function GalleryGrid() {
               </motion.div>
             ))}
           </AnimatePresence>
-        </motion.div>
+        </div>
 
         <Lightbox
           images={filtered}

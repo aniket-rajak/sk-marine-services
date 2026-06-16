@@ -17,7 +17,7 @@
 | Animations & Transitions | Done | 🟢 | Dev | Framer Motion page transitions + marine loader |
 | India-Focused Imagery | Done | 🟢 | Dev | All Unsplash photos replaced with Indian locations/faces |
 | Art & Statues Division | Done | 🟢 | Dev | Full route + 7 section components + homepage promo + cross-site integration |
-| Responsive Audit & Fixes | Done | 🟢 | Dev | 15 fixes across 12 files, 27 issues catalogued |
+| Responsive Audit & Fixes | Done | 🟢 | Dev | 20 fixes across 14 files, 30+ issues catalogued |
 | Brand Logo & Image Fixes | Done | 🟢 | Dev | 3 broken Wikimedia logos → static.cdnlogo.com; all brand images verified |
 | Navigation UX | Done | 🟢 | Dev | cursor-pointer globally + route-change loader + 1128px hamburger breakpoint |
 | Documentation | Done | 🟢 | Dev | README, TRACKER, IMPLEMENTATIONPLAN, DESIGN, PRD updated |
@@ -57,6 +57,11 @@
 | T28 | Complete responsive audit & fixes | Dev | Medium | 🟢 | Done | 27 issues catalogued; 15 fixes across 12 files |
 | T29 | Implement FOURI Team footer credit | Dev | Low | 🟢 | Done | "Proudly Design and Develop by FOURI Team with Care" with link to fouri.in |
 | T30 | Deploy to Vercel | User | High | 🔴 | Pending | Need GitHub push + Vercel import |
+| T31 | Fix ScrollReveal GPU composited overflow | Dev | High | 🟢 | Done | overflow-hidden wrapper on horizontal direction |
+| T32 | Fix GalleryGrid motion.div + CSS columns conflict | Dev | High | 🟢 | Done | Removed layout, popLayout → mode="wait" |
+| T33 | Fix HeroSection & ArtStatueHero badge overflow on 320px | Dev | Medium | 🟢 | Done | Added flex-wrap + gap |
+| T34 | Fix BrandsCarousel touch-scroll overflow | Dev | Medium | 🟢 | Done | overflow-x-auto → overflow-hidden |
+| T35 | Remove framer layout from Products & ArtStatuePortfolio children | Dev | Medium | 🟢 | Done | layout removed from child motion.div items |
 
 ## Bugs / Issues
 
@@ -68,6 +73,8 @@
 | B04 | Port 3000 conflict on restart | Low | 🟢 | Dev | Dev | Kill stale node processes with taskkill |
 | B05 | 3 brand logo URLs (Yamaha, Suzuki, Tohatsu) from Wikimedia 404 | Medium | 🟢 | Dev | Dev | Replaced with static.cdnlogo.com SVGs |
 | B06 | Products grid layout + AnimatePresence popLayout conflict | Medium | 🟢 | Dev | Dev | Removed layout prop from grid motion.div, removed redundant wrapper |
+| B07 | ScrollReveal horizontal GPU composited layer overflow | High | 🟢 | Dev | Dev | Wrapped horizontal direction in overflow-hidden |
+| B08 | GalleryGrid CSS columns + framer layout incompatible | Medium | 🟢 | Dev | Dev | Removed layout, popLayout → mode="wait" |
 
 ## Changelog
 
@@ -87,3 +94,9 @@
 | 2026-06-16 | Added 6th Art Statue service "Packaging & Logistics" for 2×3 card alignment | Dev |
 | 2026-06-16 | Completed comprehensive responsive audit: 27 issues, 15 fixes across 12 files | Dev |
 | 2026-06-16 | Added FOURI Team credit to footer with link to fouri.in | Dev |
+| 2026-06-16 | Fixed ScrollReveal GPU composited overflow — overflow-hidden wrapper on horizontal direction | Dev |
+| 2026-06-16 | Fixed GalleryGrid: removed motion.div layout, popLayout → mode="wait" | Dev |
+| 2026-06-16 | Fixed HeroSection & ArtStatueHero badge wrap on 320px | Dev |
+| 2026-06-16 | Fixed BrandsCarousel: overflow-x-auto → overflow-hidden | Dev |
+| 2026-06-16 | Removed framer layout from Products & ArtStatuePortfolio children | Dev |
+| 2026-06-16 | Updated all 6 markdown files with overflow fix documentation | Dev |

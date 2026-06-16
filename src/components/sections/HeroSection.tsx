@@ -103,7 +103,7 @@ export function HeroSection() {
 
           <motion.div
             variants={itemVariants}
-            className="mt-16 flex items-center gap-8 text-navy-300"
+            className="mt-16 flex flex-wrap items-center gap-4 sm:gap-8 text-navy-300"
           >
             {[
               "Yamaha Authorized",

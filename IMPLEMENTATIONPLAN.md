@@ -89,6 +89,11 @@
 - [x] Fix ArtStatueStats value font size on mobile
 - [x] Fix grid gaps across Art Statue components
 - [x] Fix ArtStatueProcess image height on mobile
+- [x] Fix ScrollReveal GPU composited overflow — overflow-hidden wrapper on horizontal direction
+- [x] Fix GalleryGrid: removed motion.div layout, popLayout → mode="wait"
+- [x] Fix HeroSection & ArtStatueHero badge wrap on 320px (flex-wrap + gap)
+- [x] Fix BrandsCarousel: overflow-x-auto → overflow-hidden
+- [x] Removed framer layout from Products page & ArtStatuePortfolio children
 
 ### Phase 10: Deployment (Pending — user action)
 - [ ] Push to GitHub repository
@@ -163,6 +168,7 @@ src/
 | SMTP credentials compromised | High | Low | .env.local in .gitignore; Vercel env vars not exposed |
 | Contact form spam | Medium | Medium | Rate limiting (5/min/IP) mitigates abuse |
 | Wikimedia Commons logo URLs change/break | Medium | Low | Use static.cdnlogo.com for brand logos (stable SVG CDN) |
+| Framer Motion layout prop conflicts with CSS multi-column layouts | Medium | Low | Avoid layout prop with CSS columns; use mode="wait" instead |
 
 ## 5. Definition of Done
 
@@ -180,5 +186,7 @@ src/
 - [x] Header hamburger activates at 1128px breakpoint
 - [x] StatsBar renders correctly without prefix concatenation bug
 - [x] Footer credits FOURI Team with hyperlink to fouri.in
+- [x] No horizontal overflow on mobile — all root causes fixed (no overflow-x: hidden band-aid)
+- [x] GalleryGrid renders correctly with CSS columns + AnimatePresence (no layout prop conflict)
 - [ ] Deployed on Vercel with custom domain (pending user action)
 - [ ] Environment variables configured in Vercel (pending user action)
